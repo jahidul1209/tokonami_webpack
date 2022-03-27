@@ -1,0 +1,1194 @@
+// @import url(//db.onlinewebfonts.com/c/ba8df6cf703dfda0e0f920a1f62152f9?family=Modern+DOS+8x14);
+@font-face {font-family: "Modern DOS 8x14"; src: url("//db.onlinewebfonts.com/t/ba8df6cf703dfda0e0f920a1f62152f9.eot"); src: url("//db.onlinewebfonts.com/t/ba8df6cf703dfda0e0f920a1f62152f9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ba8df6cf703dfda0e0f920a1f62152f9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ba8df6cf703dfda0e0f920a1f62152f9.woff") format("woff"), url("//db.onlinewebfonts.com/t/ba8df6cf703dfda0e0f920a1f62152f9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ba8df6cf703dfda0e0f920a1f62152f9.svg#Modern DOS 8x14") format("svg"); }
+/* -------------------- Resets --------------------- */
+body, form, fieldset, ol, ul, li, h1, h2, h3, h4, h5, h6, p {
+  margin:0;
+  padding:0;
+  }
+  img {
+  border:0; 
+  vertical-align:bottom; 
+  }
+  /* ------------------- Defaults ------------------- */
+  html {
+  height:100%; 
+  overflow:auto;
+  overflow-y:scroll;
+  }
+  body {
+  height:100%;
+   font-family: "Modern DOS 8x14";
+  background:#000000;
+  color:rgb(255, 255, 255);
+  }
+  /* ------------------ Typography ------------------- */
+  h1, h2, h3, h4, h5, h6, p {
+  margin:0 0 1em;
+  }
+  p, ul, ol {
+  font-size:1.3rem;
+  color: #c7c7c7;
+  }
+  ul {
+  margin:0 0 1em 25px;
+  list-style:none;
+  }
+  h1 {font-size:3em; color: rgb(237, 27, 36);}
+  h2 {font-size:2em; color: rgb(237, 27, 36);}
+  h3 {font-size:1.8em;}
+  h4 {font-size:1.5em;}
+  h5 {font-size:1.2em;}
+  h6 {font-size:1.1em;}
+  /* -------------------- Forms ---------------------- */
+  fieldset {
+  border:none;
+  }
+  form :focus {
+  outline:0; /* removes Safari's blue border */
+  }  
+  input, select, textarea {
+  font-size:1em;
+  font-family: "Modern DOS 8x14";
+  }
+  label {
+  cursor:pointer;
+  vertical-align:middle;
+  }
+  input {
+  vertical-align:middle;
+  }
+  textarea { 
+  overflow:auto; /* removes scrollbar from IE when none is needed */
+  }	
+  /* -------------------- Layout --------------------- */
+
+// Banner Section
+
+.bannerSection{
+  .container{
+      padding: 12rem 5rem;  
+  }
+}
+
+
+// ***************** About Section *******************
+
+.about-section {
+  padding: 120px 0px 0px;
+}
+img.abut-img {
+  height: 45rem;
+  object-fit: cover;
+}
+.aboutImg{
+  padding-right: 35px;
+}
+#tsparticles canvas {
+  width: 100% !important;
+  height: 100vh;
+   position:unset !important; 
+  z-index: 0 !important;
+  top: 0px !important;
+  left: 0px !important;
+  pointer-events: none;
+}
+@media only screen  and (max-width:736px){
+  .about-section {
+    padding: 120px 20px 0px;
+  }
+  .aboutImg{
+    padding-right: 0px;
+  }
+}
+
+// Service Section
+.service-section{
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-areas: 
+  "whoare  toolsimg1  whatare"
+  "veiwsimg1 gapfil metaimg1"
+  "whenlaunch timewaitimg1  wherelaunch";
+
+  p {
+    font-size: 1.3rem;
+    color: #a9a8a8;
+}
+}
+.whoare{
+  grid-area: whoare;
+  padding: 0px 30px 0px 0px;
+}
+.toolsimg{
+  grid-area: toolsimg1;
+  padding: 120px 40px 0px;
+  margin: 0 auto;
+}
+.whatare {
+  grid-area: whatare;
+  padding: 0px 0px 0px 30px;
+}
+.veiwsimg{
+  grid-area: veiwsimg1;
+  padding: 20px 40px 100px;
+  margin: 5% auto;
+}
+.metaimg{
+  grid-area: metaimg1;
+  padding: 20px 40px 100px;
+  margin: 5% auto;
+}
+.whenlaunch{
+  grid-area: whenlaunch;
+  padding: 0px 30px 0px 0px;
+}
+.timewaitimg{
+  grid-area: timewaitimg1;
+  padding: 45px;
+  margin: 0 auto;
+}
+.wherelaunch{
+  grid-area: wherelaunch;
+  padding: 0px 0px 0px 30px;
+}
+.gapfil{
+  grid-area: gapfil;
+}
+
+@media only screen  and (max-width:736px){
+
+  .service-section{
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "whoare"
+    "veiwsimg1"
+    "whatare"
+    "toolsimg1"
+    "whenlaunch"
+    "timewaitimg1"
+    "wherelaunch"
+    "metaimg1";
+    p {
+      font-size: 1.5rem;
+      color: #a9a8a8;
+  }
+  }
+
+.veiwsimg {
+    grid-area: veiwsimg1;
+    padding: 15px 30px 45px;
+    margin: 5% 0%;
+}
+.toolsimg {
+  grid-area: toolsimg1;
+  padding: 15px 30px 45px;
+  margin: 5% 0%;
+}
+.timewaitimg {
+  grid-area: timewaitimg1;
+  padding: 15px 30px 45px;
+  margin: 5% 0%;
+}
+.metaimg {
+  grid-area: metaimg1;
+  padding: 15px 30px 45px;
+  margin: 5% 0%;
+}
+
+
+
+.whoare{
+  grid-area: whoare;
+  padding: 40px 0px 0px;
+}
+
+.whatare {
+  grid-area: whatare;
+  padding: 0px;
+}
+.whenlaunch{
+  grid-area: whenlaunch;
+  padding: 0px;
+}
+
+.wherelaunch{
+  grid-area: wherelaunch;
+  padding: 0px;
+}
+}
+@media only screen  and (min-width:765px) and (max-width:1024px){
+    img.abut-img {
+      height: 66rem;
+      object-fit: cover;
+    }
+}
+// tokenomics-section 
+
+.direction {
+  position: relative;
+  text-align: center;
+  padding: 290px 20px;
+}
+// img.directionimg {
+//   position: absolute;
+//   left: 30%;
+// }
+.directionimg {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 40%;
+  top: 35%;
+  background: rgba(14, 10, 10, 0);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 6px #ed1b24;
+}
+
+.cs1::before {
+  font-size: 65px;
+  position: absolute;
+  top: 15%;
+  left: 87%;
+  transform: rotate(245deg);
+}
+.cs2::before {
+  font-size: 65px;
+  position: absolute;
+  top: 89%;
+  left: 45%;
+  transform: rotate(350deg);
+}
+.cs3::before {
+  font-size: 65px;
+  position: absolute;
+  top: 30%;
+  left: -3%;
+  transform: rotate(100deg);
+}
+.directionimg {
+   font-size: 60px;
+   position: absolute;
+  //  transform: rotate(0deg);
+   animation: animation 10s linear infinite;
+}
+@keyframes animation {
+   0%{
+       transform: rotate(15deg);
+   }
+   25%{
+    transform: rotate(10deg);
+   }
+   35%{
+    transform: rotate(5deg);
+   }
+
+   50%{
+       transform: rotate(-5deg);
+   }
+   75%{
+       transform: rotate(5deg);
+   }
+   100%{
+       transform: rotate(15deg);
+   }
+
+}
+.directionimg:hover {
+   font-size: 60px;
+   position: absolute;
+   animation-play-state: paused;
+   /* animation: animation 10s linear infinite; */
+}
+
+img.directionimg1 {
+  position: absolute;
+  top: 15%;
+  left: 48%;
+  transform: translate(57%, 28%);
+  animation: animationimg1 10s linear infinite;
+}
+@keyframes animationimg1{
+  0%{
+    transform: translate(52%, 28%);
+  }
+  50%{
+    transform: translate(62%, 28%);
+  }
+  100%{
+    transform: translate(52%, 28%);
+  }
+ 
+}
+img.directionimg2 {
+  position: absolute;
+  top: 59%;
+  left: 23%;
+  transform: translate(25%, 10%);
+  animation: animationimg2 10s linear infinite;
+}
+@keyframes animationimg2{
+  0%{
+    transform: translate(22%, 10%);
+  }
+  50%{
+    transform: translate(28%, 20%);
+  }
+  100%{
+    transform: translate(22%, 10%);
+  }
+ 
+}
+
+img.directionimg3 {
+  position: absolute;
+  right: -5%;
+  top: 57%;
+  transform: translate(-25%, 20%);
+  animation: animationimg3 10s linear infinite;
+}
+@keyframes animationimg3{
+  0%{
+    transform: translate(-22%, 15%);
+  }
+  50%{
+    transform: translate(-28%, 25%);
+  }
+  100%{
+    transform: translate(-22%, 15%);
+  }
+ 
+}
+img.directionimg4 {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  width: 115px;
+  transform: translate(18%, -25%);
+}
+
+p.staking {
+  position: absolute;
+  top: 42%;
+  left: 21%;
+  transform: translate(25px, 15px);
+  animation: staking 10s linear infinite;
+}
+@keyframes staking{
+  0%{
+    transform:  translate(25px, 15px);
+  }
+  50%{
+    transform:   translate(25px, 25px);
+  }
+  100%{
+    transform:  translate(25px, 15px);
+  }
+ 
+}
+
+p.upgading {
+    position: absolute;
+    top: 42%;
+    left: 90%;
+    transform: translate(0%, 10%);
+    animation: upgading 10s linear infinite;
+}
+@keyframes upgading{
+  0%{
+    transform: translate(0%, 10%);
+  }
+  50%{
+    transform:  translate(0%, 0%);
+  }
+  100%{
+    transform: translate(0%, 10%);
+  }
+ 
+}
+p.coversion {
+  bottom: 19%;
+  position: absolute;
+  left: 46%;
+  transform: translate(65%, -5%);
+  animation: coversion 10s linear infinite;
+}
+@keyframes coversion{
+  0%{
+    transform:  translate(65%, -5%);
+  }
+  50%{
+    transform:  translate(75%, -5%);
+  }
+  100%{
+    transform:  translate(65%, -5%);
+  }
+ 
+}
+.tokenomics-section {
+  padding-top: 120px;
+}
+@media only screen  and (max-width:420px){
+  .tokenomics-section {
+    padding-top: 10px;
+}
+
+  .cs1::before {
+    font-size: 55px;
+    position: absolute;
+    top: 15%;
+    left: 87%;
+    transform: rotate(245deg);
+}
+.cs2::before {
+  font-size: 55px;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: rotate(348deg);
+}
+.cs3::before {
+    font-size: 55px;
+    position: absolute;
+    top: 30%;
+    left: -4%;
+    transform: rotate(100deg);
+}
+.direction {
+    position: relative;
+    text-align: center;
+    padding: 230px 5px;
+    margin: 35px 5px;
+}
+.directionimg {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 15%;
+  top: 20%;
+  background: rgba(14, 10, 10, 0);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 6px #ed1b24;
+}
+img.directionimg2 {
+  position: absolute;
+  width: 65px;
+  top: 63%;
+  left: 0%;
+  transform: translate(20%, 10%);
+  animation: animationimg2 10s linear infinite;
+}
+img.directionimg3 {
+  position: absolute;
+  width: 65px;
+  right: 2%;
+  top: 58%;
+  transform: translate(-25%,20%);
+  animation: animationimg3 10s linear infinite;
+}
+img.directionimg1 {
+  position: absolute;
+  width: 65px;
+  top: -5%;
+  left: 28%;
+  transform: translate(60%, 25%);
+  animation: animationimg1 10s linear infinite;
+}
+img.directionimg4 {
+  position: absolute;
+  width: 85px;
+  top: 43%;
+  left: 33%;
+  transform: translate(13%, -30%);
+}
+p.staking {
+  position: absolute;
+  top: 23%;
+  font-size: 16px;
+  left: -4%;
+  transform: translate(25px, 15px);
+  animation: staking 10s linear infinite;
+}
+p.upgading {
+  position: absolute;
+  top: 23%;
+  font-size: 16px;
+  left: 73%;
+  transform: translate(0%, 10%);
+  animation: upgading 10s linear infinite;
+}
+p.coversion {
+  bottom: 13%;
+  position: absolute;
+  font-size: 16px;
+  left: 25%;
+  transform: translate(65%, -5%);
+  animation: coversion 10s linear infinite;
+}
+.MetriRUST {
+  padding-top: 40px;
+}
+}
+@media only screen  and (min-width:420px ) and (max-width:540px){
+  .tokenomics-section {
+    padding-top: 10px;
+}
+
+  .cs1::before {
+    font-size: 55px;
+    position: absolute;
+    top: 15%;
+    left: 87%;
+    transform: rotate(245deg);
+}
+.cs2::before {
+  font-size: 55px;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: rotate(348deg);
+}
+.cs3::before {
+    font-size: 55px;
+    position: absolute;
+    top: 30%;
+    left: -4%;
+    transform: rotate(100deg);
+}
+.direction {
+    position: relative;
+    text-align: center;
+    padding: 230px 5px;
+    margin: 35px 5px;
+}
+.directionimg {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 15%;
+  top: 20%;
+  background: rgba(14, 10, 10, 0);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 6px #ed1b24;
+}
+img.directionimg2 {
+  position: absolute;
+  width: 65px;
+  top: 63%;
+  left: 0%;
+  transform: translate(20%, 10%);
+  animation: animationimg2 10s linear infinite;
+}
+img.directionimg3 {
+  position: absolute;
+  width: 65px;
+  right: 10%;
+  top: 56%;
+  transform: translate(-25%, 20%);
+  animation: animationimg3 10s linear infinite;
+}
+img.directionimg1 {
+  position: absolute;
+  width: 65px;
+  top: -8%;
+  left: 28%;
+  transform: translate(60%, 25%);
+  animation: animationimg1 10s linear infinite;
+}
+img.directionimg4 {
+  position: absolute;
+  width: 85px;
+  top: 42%;
+  left: 32%;
+  transform: translate(13%, -30%);
+}
+p.staking {
+  position: absolute;
+  top: 23%;
+  font-size: 16px;
+  left: -4%;
+  transform: translate(25px, 15px);
+  animation: staking 10s linear infinite;
+}
+p.upgading {
+  position: absolute;
+  top: 23%;
+  font-size: 16px;
+  left: 68%;
+  transform: translate(0%, 10%);
+  animation: upgading 10s linear infinite;
+}
+p.coversion {
+  bottom: 13%;
+  position: absolute;
+  font-size: 16px;
+  left: 25%;
+  transform: translate(65%, -5%);
+  animation: coversion 10s linear infinite;
+}
+.MetriRUST {
+  padding-top: 40px;
+}
+}
+@media only screen  and (min-width:540px ) and (max-width:736px){
+  .tokenomics-section {
+    padding-top: 10px;
+}
+
+  .cs1::before {
+    font-size: 55px;
+    position: absolute;
+    top: 15%;
+    left: 87%;
+    transform: rotate(245deg);
+}
+.cs2::before {
+  font-size: 55px;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: rotate(348deg);
+}
+.cs3::before {
+    font-size: 55px;
+    position: absolute;
+    top: 30%;
+    left: -4%;
+    transform: rotate(100deg);
+}
+.direction {
+    position: relative;
+    text-align: center;
+    padding: 230px 5px;
+    margin: 35px 5px;
+}
+.directionimg {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 15%;
+  top: 20%;
+  background: rgba(14, 10, 10, 0);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 6px #ed1b24;
+}
+img.directionimg2 {
+  position: absolute;
+  width: 65px;
+  top: 62%;
+  left: 1%;
+  transform: translate(20%, 10%);
+  animation: animationimg2 10s linear infinite;
+}
+img.directionimg3 {
+  position: absolute;
+  width: 65px;
+  right: 28%;
+  top: 56%;
+  transform: translate(-25%, 20%);
+  animation: animationimg3 10s linear infinite;
+}
+img.directionimg1 {
+  position: absolute;
+  width: 68px;
+  top: -7%;
+  left: 24%;
+  transform: translate(60%, 25%);
+  animation: animationimg1 10s linear infinite;
+}
+img.directionimg4 {
+  position: absolute;
+  width: 85px;
+  top: 41%;
+  left: 28%;
+  transform: translate(12%, -20%);
+}
+p.staking {
+  position: absolute;
+  top: 23%;
+  font-size: 16px;
+  left: -4%;
+  transform: translate(25px, 15px);
+  animation: staking 10s linear infinite;
+}
+p.upgading {
+  position: absolute;
+  top: 24%;
+  font-size: 16px;
+  left: 58%;
+  transform: translate(0%, 10%);
+  animation: upgading 10s linear infinite;
+}
+p.coversion {
+  bottom: 13%;
+  position: absolute;
+  font-size: 16px;
+  left:22%;
+  transform: translate(65%, -5%);
+  animation: coversion 10s linear infinite;
+}
+.MetriRUST {
+  padding-top: 40px;
+}
+}
+@media only screen  and (min-width:765px) and (max-width:1024px){
+  .directionimg {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    left: 6%;
+    top: 35%;
+    background: rgba(14, 10, 10, 0);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 6px #ed1b24;
+}
+p.upgading {
+  position: absolute;
+  font-size: 20px;
+  top: 37%;
+  left: 83%;
+  transform: translate(0%, 10%);
+  animation: upgading 10s linear infinite;
+}
+p.staking {
+  position: absolute;
+  font-size: 20px;
+  top: 37%;
+  left: 14%;
+  transform: translate(25px, 15px);
+  animation: staking 10s linear infinite;
+}
+p.coversion {
+  bottom: 39%;
+  position: absolute;
+  font-size: 20px;
+  left: 20%;
+  transform: translate(65%, -5%);
+  animation: coversion 10s linear infinite;
+}
+.cs2::before {
+  font-size: 70px;
+  position: absolute;
+  top: 87%;
+  left: 52%;
+  transform: rotate(348deg);
+}
+img.directionimg1 {
+  position: absolute;
+  top: 28%;
+  width: 55px;
+  left: 29%;
+  transform: translate(60%, 25%);
+  animation: animationimg1 10s linear infinite;
+}
+img.directionimg2 {
+  position: absolute;
+  top: 52%;
+  width: 55px;
+  left: 0%;
+  transform: translate(20%, 10%);
+  animation: animationimg2 10s linear infinite;
+}
+img.directionimg3 {
+  position: absolute;
+  width: 55px;
+  right: 0%;
+  top: 49%;
+  transform: translate(-25%, 20%);
+  animation: animationimg3 10s linear infinite;
+}
+img.directionimg4 {
+  position: absolute;
+  width: 90px;
+  top: 44%;
+  left: 33%;
+  transform: translate(13%, -30%);
+}
+}
+@media only screen  and (min-width:1024px) and (max-width:1366px){
+  p.upgading {
+    position: absolute;
+    top: 42%;
+    left: 97%;
+    transform: translate(0%, 10%);
+    animation: upgading 10s linear infinite;
+}
+p.staking {
+  position: absolute;
+  top: 42%;
+  left: 18%;
+  transform: translate(25px, 15px);
+  animation: staking 10s linear infinite;
+}
+p.coversion {
+  bottom: 24%;
+  position: absolute;
+  left: 49%;
+  transform: translate(40%, 13%);
+  animation: coversion 10s linear infinite;
+}
+img.directionimg1 {
+  position: absolute;
+  top: 17%;
+  left: 49%;
+  transform: translate(28%, -20%);
+  animation: animationimg1 10s linear infinite;
+}
+img.directionimg2 {
+  position: absolute;
+  top: 57%;
+  left: 19%;
+  transform: translate(20%, 10%);
+  animation: animationimg2 10s linear infinite;
+}
+img.directionimg3 {
+  position: absolute;
+  right: -14%;
+  top: 57%;
+  transform: translate(-25%, 20%);
+  animation: animationimg3 10s linear infinite;
+}
+  img.directionimg4 {
+    position: absolute;
+    top: 48%;
+    width: 115px;
+    left: 55%;
+    transform: translate(16%, -23%);
+}
+}
+
+// ---------------------------------Metrics---------------------------------------
+
+.matrics-section{
+    padding-top: 120px;
+
+    p {
+      margin-bottom: 0px;
+    }
+    h4 {
+      margin-bottom: 8px;
+    }
+    h5 {
+      margin-bottom: 15px;
+   }
+   th, td {
+    color: #c7c7c7;
+    }
+  .table>:not(caption)>*>* {
+    padding: 0.5rem 1.5rem;
+    background-color: #00090e;
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  }
+  .rifgt{
+    text-align: right;
+  }
+  .rustsec {
+    position: relative;
+  }
+}
+.matrics{
+  display: grid;
+  grid-auto-columns: 1fr  1fr;
+  grid-template-areas:
+      'rustsec1 rustsec2'
+ }
+ .rustsec1{
+  grid-area: rustsec1;
+ }
+ .rustsec2{
+  grid-area: rustsec2;
+ }
+
+.matricsOil {
+  display: grid;
+  grid-auto-columns: 1fr  1fr;
+  grid-template-areas:
+      'rustsec2 rustsec1'
+ }
+ .rustsec1{
+  grid-area: rustsec1;
+ }
+ .rustsec2{
+  grid-area: rustsec2;
+ }
+img.rustimg1 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 125px;
+    transform: translate(-55%, -50%);
+}
+img.rustimg2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 125px;
+  transform: translate(-15%, -28%);
+}
+img.rustimg3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 125px;
+  transform: translate(-66%, -50%);
+}
+
+
+
+img.rustimg {
+  transform: rotate(0deg);
+  animation: rustimg 10s linear infinite;
+}
+@keyframes rustimg{
+  0%{
+    transform:  rotate(0deg);
+  }
+  50%{
+    transform:  rotate(10deg);
+  }
+  100%{
+    transform:  rotate(0deg);
+  }
+ 
+}
+
+@media only screen  and (max-width:540px){
+  .matrics-section {
+    padding-top: 10px;
+  }
+  .matrics{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        'rustsec1'
+        'rustsec2';
+   }
+   .rustsec1{
+    grid-area: rustsec1;
+   }
+   .rustsec2{
+    grid-area: rustsec2;
+   }
+ 
+  .matricsOil {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        'rustsec1'
+        'rustsec2';
+   }
+   .rustsec1{
+    grid-area: rustsec1;
+   }
+   .rustsec2{
+    grid-area: rustsec2;
+   }
+
+  img.rustimg1 {
+    position: absolute;
+    top: 32%;
+    left: 32%;
+    width: 80px;
+    transform: translate(10%, 10%);
+}
+  img.rustimg2 {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 80px;
+    transform: translate(60%, 2%);
+}
+  img.rustimg3 {
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    width: 90px;
+    transform: translate(15%, 10%);
+}
+}
+@media only screen  and (min-width:540px) and( max-width: 736px) {
+  .matrics{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        'rustsec1'
+        'rustsec2';
+   }
+   .rustsec1{
+    grid-area: rustsec1;
+   }
+   .rustsec2{
+    grid-area: rustsec2;
+   }
+ 
+  .matricsOil {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        'rustsec1'
+        'rustsec2';
+   }
+   .rustsec1{
+    grid-area: rustsec1;
+   }
+   .rustsec2{
+    grid-area: rustsec2;
+   }
+  img.rustimg1 {
+    position: absolute;
+    top: 33%;
+    left: 35%;
+    width: 85px;
+    transform: translate(8%, 18%);
+  }
+  img.rustimg2 {
+    position: absolute;
+    top: 46%;
+    left: 41%;
+    width: 85px;
+    transform: translate(60%, 2%);
+}
+img.rustimg3 {
+  position: absolute;
+  top: 33%;
+  left: 35%;
+  width: 85px;
+  transform: translate(8%, 18%);
+}
+}
+
+@media only screen  and (min-width:765px) and (max-width:912px){
+
+  img.rustimg1 {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    width: 75px;
+    transform: translate(20%, -18%);
+}
+img.rustimg2 {
+  position: absolute;
+  top: 18%;
+  left: 45%;
+  width: 80px;
+  transform: translate(10%, 10%);
+}
+img.rustimg3 {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  width: 75px;
+  transform: translate(20%, -18%);
+}
+
+}
+@media only screen  and (min-width:912px) and (max-width:1024px){
+  .directionimg {
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    left: 5%;
+    top: 35%;
+    background: rgba(14, 10, 10, 0);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 6px #ed1b24;
+}
+img.directionimg1 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translate(30%, -10%);
+  /* animation: animationimg1 10s linear infinite; */
+}
+  img.rustimg1 {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    width: 75px;
+    transform: translate(20%, -18%);
+}
+img.rustimg2 {
+  position: absolute;
+  top: 18%;
+  left: 45%;
+  width: 80px;
+  transform: translate(10%, 10%);
+}
+img.rustimg3 {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  width: 75px;
+  transform: translate(20%, -18%);
+}
+img.directionimg2 {
+  position: absolute;
+  top: 57%;
+  left: 0%;
+  transform: translate(20%, 10%);
+  animation: animationimg2 10s linear infinite;
+}
+img.directionimg3 {
+  position: absolute;
+  right: 33%;
+  top: 56%;
+  transform: translate(-25%, 20%);
+  animation: animationimg3 10s linear infinite;
+}
+p.staking {
+  position: absolute;
+  top: 34%;
+  left: -8%;
+  transform: translate(25px, 15px);
+  animation: staking 10s linear infinite;
+}
+p.upgading {
+  position: absolute;
+  top: 35%;
+  left: 56%;
+  transform: translate(0%, 10%);
+  animation: upgading 10s linear infinite;
+}
+img.directionimg4 {
+  position: absolute;
+  top: 45%;
+  width: 90px;
+  left: 25%;
+  transform: translate(2%, -20%);
+}
+p.coversion {
+  bottom: 32%;
+  position: absolute;
+  left: 13%;
+  transform: translate(15%, 5%);
+  animation: coversion 10s linear infinite;
+}
+}
+@media only screen  and (min-width:1024px) and (max-width:1366px){
+  img.rustimg1 {
+    position: absolute;
+    top: 44%;
+    left: 28%;
+    width: 115px;
+    transform: translate(28%, -45%);
+}
+img.rustimg2 {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  width: 115px;
+  transform: translate(48%, -35%);
+}
+img.rustimg3 {
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  width: 125px;
+  transform: translate(-40%, 55%);
+  transition: 0.25s;
+}
+}
+
